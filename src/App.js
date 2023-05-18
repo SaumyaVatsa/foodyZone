@@ -1,4 +1,4 @@
-import { Home, Login } from "./pages";
+import { Home, Login, Signup } from "./pages";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
     <Routes>
       <Route path="/" exact element={<Home/>}/>
       <Route path="/login" element= {<Login/>}/>
+      <Route path="/createUser" element= {<Signup/>}/>
     </Routes>
   </Router>
 }
